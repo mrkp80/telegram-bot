@@ -75,7 +75,7 @@ if __name__ == "__main__":
     import os
 
     TOKEN = "7944939168:AAHol_MaUBGWwCUgQanKGj3hUbZjFV_cJWs"
-    WEBHOOK_URL = "https://telegram-bot-s349.vercel.app"
+    WEBHOOK_URL = "https://api.telegram.org/bot7944939168:AAHol_MaUBGWwCUgQanKGj3hUbZjFV_cJWs/getWebhookInfo"
 
     app = ApplicationBuilder().token(TOKEN).build()
 
@@ -97,5 +97,5 @@ if __name__ == "__main__":
         listen="0.0.0.0",
         port=int(os.environ.get("PORT", 8443)),
         url_path=TOKEN,
-        webhook_url=f"{WEBHOOK_URL}/{TOKEN}",
+        webhook_url=f"https://api.telegram.org/bot7944939168:AAHol_MaUBGWwCUgQanKGj3hUbZjFV_cJWs/getWebhookInfo",
     )
